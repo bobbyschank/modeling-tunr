@@ -20,10 +20,22 @@ router.put('/api/artists/:id', artistsController.update);
 // destroy
 router.delete('/api/artists/:id', artistsController.destroy);
 
-//Manager Routes
+//MANGER ROUTES
+
+// create
+router.post('/api/managers/', managersController.create);
 
 // index
 router.get('/api/managers', managersController.index);
+
+// show
+router.get('/api/managers/:id', managersController.show);
+
+// update
+router.put('/api/managers/:id', managersController.update);
+
+// destroy
+router.delete('/api/managers/:id', managersController.destroy);
 
 //Song Routes
 
